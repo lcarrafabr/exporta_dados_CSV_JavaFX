@@ -1,0 +1,45 @@
+.button-topo{
+    /*-fx-background-color: #34495e;*/ /*valor antigo azul mais escuro*/
+    -fx-background-color: #005797;
+    /*-fx-background-radius: 6, 5;*/
+    -fx-background-insets: 0, 1;
+    -fx-padding : 5 6 5 6;
+    -fx-text-fill: #ffffff;
+}
+.button-topo:hover{
+    /*-fx-background-color: #607D8B;*//*valor antigo azul mais escuro*/
+    -fx-background-color: #0288D1;
+    /*-fx-background-radius: 6, 5;*/
+    -fx-background-insets: 0, 1;
+    -fx-padding: 5 6 5 6;
+    -fx-text-fill: #ffffff;
+}
+.hbox-menu{
+    /**-fx-background-color: #34495e;*/ /*valor antigo azul mais escuro*/
+    -fx-background-color: #005797;
+}
+.button-sair{
+    /*-fx-background-color: #395067;*//*valor antigo azul mais escuro*/
+    -fx-background-color: #0288D1;
+    -fx-background-insets: 0, 1;
+    -fx-padding: 5 6 5 6;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;
+}
+
+.button-cad-auxiliar{
+    -fx-background-color: #4E6E8D;
+    /*-fx-background-radius: 6, 5;*/
+    -fx-background-insets: 0, 1;
+    -fx-padding: 5 6 5 6;
+    -fx-text-fill: #ffffff;
+}
+.button-arquivo{
+    /*-fx-background-color: #34495e;*/ /*valor antigo azul mais escuro*/
+    -fx-background-color:  linear-gradient(#1B6FA8 0%, #175F90 20%, #134F78 80%, #0F3E5E 100%);
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 1, 2);
+    /*-fx-background-radius: 6, 5;*/
+    -fx-background-insets: 0, 1;
+    -fx-padding : 5 6 5 6;
+    -fx-text-fill: #ffffff;
+}

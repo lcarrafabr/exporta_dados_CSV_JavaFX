@@ -1,0 +1,46 @@
+.accordion .titled-pane > *.content{
+    -fx-background-color: #0B4E79;
+}
+
+.accordion{
+    -fx-background-color: #0C5584;
+}
+
+.button-topo{
+    /*-fx-background-color: #34495e;*/ /*valor antigo azul mais escuro*/
+    -fx-background-color: #005797,
+	linear-gradient(#303842 0%, #3e5577 20%, #375074 100%),
+        linear-gradient(#768aa5 0%, #849cbb 5%, #5877a2 50%, #486a9a 51%, #4a6c9b 100%);
+    /*-fx-background-radius: 6, 5;*/
+    -fx-background-insets: 0, 1;
+    -fx-padding : 5 6 5 6;
+    -fx-text-fill: #ffffff;
+}
+.button-topo:hover{
+    /*-fx-background-color: #607D8B;*//*valor antigo azul mais escuro*/
+    -fx-background-color: #028FDB,
+	linear-gradient(#303842 0%, #3e5577 20%, #375074 100%),
+        linear-gradient(#5E6D83 0%, #7388A3 5%, #6387B7 50%, #3E5C85 51%, #4a6c9b 100%);
+    /*-fx-background-radius: 6, 5;*/
+    -fx-background-insets: 0, 1;
+    -fx-padding: 5 6 5 6;
+    -fx-text-fill: #ffffff;
+}
+
+.accordion .titled-pane .title {
+    /*-fx-background-color: red;*/
+	-fx-background-color: 
+        #a6b5c9,
+        linear-gradient(#303842 0%, #3e5577 20%, #375074 100%),
+        linear-gradient(#768aa5 0%, #849cbb 5%, #5877a2 50%, #486a9a 51%, #4a6c9b 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 7 30 10 30;
+    -fx-text-fill: #242d35;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+#iphone Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , -1 );
+}

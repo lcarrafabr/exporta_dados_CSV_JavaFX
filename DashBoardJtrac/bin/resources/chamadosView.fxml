@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="808.0" prefWidth="1299.0" style="-fx-background-color: white;" stylesheets="@../css/componentsStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.dashboardjtrac.controller.ChamadosController">
+   <children>
+      <VBox layoutX="163.0" layoutY="32.0" prefHeight="164.0" prefWidth="1299.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane prefHeight="9.0" prefWidth="1299.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <VBox prefHeight="85.0" prefWidth="122.0">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="122.0">
+                           <children>
+                              <JFXTextField fx:id="txtNumeroChamado" labelFloat="true" promptText="N° do Chamado" />
+                           </children>
+                        </StackPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Separator>
+                  <VBox prefHeight="66.0" prefWidth="173.0">
+                     <children>
+                        <StackPane prefHeight="105.0" prefWidth="173.0">
+                           <children>
+                              <JFXDatePicker fx:id="dateDatainicio" defaultColor="#4d6d90" promptText="Data inicio" />
+                           </children>
+                        </StackPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="66.0" prefWidth="173.0">
+                     <children>
+                        <StackPane prefHeight="100.0" prefWidth="173.0">
+                           <children>
+                              <JFXDatePicker fx:id="dateDataFim" defaultColor="#4d6d90" promptText="Data Fim" />
+                           </children>
+                        </StackPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox prefHeight="100.0" prefWidth="195.0">
+                     <children>
+                        <StackPane prefHeight="100.0" prefWidth="202.0">
+                           <children>
+                              <JFXComboBox fx:id="comboSistema" labelFloat="true" prefHeight="31.0" prefWidth="186.0" promptText="Sistema" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <VBox prefHeight="100.0" prefWidth="151.0" stylesheets="@../css/botoesMenuStyle.css">
+                     <children>
+                        <JFXButton fx:id="btnCarrergaGrade" onAction="#carregaGradeOnAction" prefHeight="31.0" prefWidth="157.0" styleClass="button-arquivo" text="Carregar grade">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnExposrtarCSV" onAction="#exportarCSVOnAction" prefHeight="31.0" prefWidth="163.0" styleClass="button-arquivo" text="Exportar CSV">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="8.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="btnTeste" onAction="#testeOnAction" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: blue;" text="Teste" />
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="48.0" prefWidth="1171.0" style="-fx-background-color: white;">
+               <children>
+                  <Pane prefHeight="48.0" prefWidth="1213.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="6.0" prefHeight="31.0" prefWidth="122.0" text="Qtd. Chamados:" />
+                        <Label fx:id="labelQtdChamados" layoutX="136.0" layoutY="11.0" prefHeight="21.0" prefWidth="49.0" text="0000" />
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+      <TableView fx:id="gradeChamados" layoutX="290.0" layoutY="160.0" prefHeight="648.0" prefWidth="1299.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="160.0">
+        <columns>
+          <TableColumn fx:id="colChamados" prefWidth="114.0" text="Chamados" />
+          <TableColumn fx:id="colSistema" prefWidth="110.0" text="Sistema" />
+            <TableColumn fx:id="colStatus" prefWidth="102.0" text="Status" />
+            <TableColumn fx:id="colDataAbertura" prefWidth="178.0" text="Data Abertura" />
+            <TableColumn fx:id="colDataFechamento" prefWidth="170.0" text="Data fechamento" />
+            <TableColumn fx:id="colCategoria" prefWidth="187.0" text="Categoria" />
+            <TableColumn fx:id="colPrioridade" prefWidth="126.0" text="Prioridade" />
+            <TableColumn fx:id="colEffortTime" prefWidth="109.0" text="Effort Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

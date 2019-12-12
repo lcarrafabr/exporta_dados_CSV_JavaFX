@@ -1,0 +1,129 @@
+/*
+Aqui coloco o css da borda de panes
+*/
+/* 
+    Created on : 07/07/2018, 21:33:12
+    Author     : Luciano Carrafa benfica
+*/
+/*painel banco de borda cinza*/
+.pane-components{ 
+    -fx-border-color: #cccccc;
+    -fx-background-color: #ffffff;
+}
+.pagination-component{
+    
+    /*-fx-background-color: #ffffff;*/
+}
+
+.pane{
+    -fx-border-color: #37474F;
+}.fundo-branco{
+    -fx-background-color: #ffffff;
+}
+*/
+
+/*Formata componentes comuns*/
+.jfx-text-field
+{
+    -fx-text-fill: #646262;
+    -jfx-focus-color: #2980b9;
+    -jfx-unfocus-color: #bbbbbb;
+    -fx-prompt-text-fill: #898989; /*Cinza - floating label*/
+}
+.jfx-password-field{
+    -fx-text-fill: #646262;
+    -jfx-focus-color: #2980b9;
+    -jfx-unfocus-color: #bbbbbb;
+    -fx-prompt-text-fill: #898989; /*Cinza - floating label*/
+}
+.jfx-combo-box
+{
+    -fx-text-fill: #646262;
+    -jfx-focus-color: #2980b9;
+    -jfx-unfocus-color: #bbbbbb;
+    -fx-prompt-text-fill: #898989; /*Cinza - floating label*/
+}
+.jfx-combo-box .list-cell
+{
+    -fx-text-fill: #646262;
+    -jfx-focus-color: #2980b9;
+    -jfx-unfocus-color: #bbbbbb;
+    -fx-prompt-text-fill: #898989; /*Cinza - floating label*/
+}
+
+.text-area{
+    -fx-text-fill: #646262;
+    -fx-focus-color: #2980b9;
+    -fx-unfocus-color: #bbbbbb;
+    -fx-prompt-text-fill: #898989; /*Cinza - floating label*/
+}
+.jfx-check-box{
+    -fx-text-fill: #646262;
+}
+
+/*------------------------------------------------------------------------------*/
+/******* FORMATA TABLEVIEW ******/
+
+/*Formata linha selecionada*/
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+/*Formata texto do topo das colunas*/
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #263238;
+}
+
+/*teste tableview*/
+
+/*Formata texto das linhas do texto da linha*/
+/*.table-view .table-cell{
+    /*-fx-text-fill: black;*/
+  /*  -fx-alignment: CENTER;
+}*/
+
+
+/*Define a cor gradiente para o topo da tableview*/
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#005797 0%, #0277BD 100%);
+}
+
+
+/*Define o background do topo da tablerview
+Se deixar transparente ela pega a formatação co css acima*/
+.table-view .column-header {
+    -fx-background-color: #CFD8DC;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*The tab bar ******************************************************/
+.jfx-tab-pane .headers-region {
+/*Cor das Tabs*/
+    
+-fx-background-color: #37474F;
+
+}
+
+.jfx-tab-pane .tab-header-background {
+/*cor da barra onde fica a tab*/
+    
+-fx-background-color: #37474F;
+
+}
+
+/*.jfx-tab-pane */
+.tab-selected-line {
+/*cor da linha da tab selecionada  #d32f2f*/
+    
+-fx-stroke: #d32f2f;
+
+    -fx-stroke-width: 1pt;
+
+}
+
+/*************************************************************/
+
